@@ -7,4 +7,63 @@
 *,
 html {
   font-family: "Inter", sans-serif;
+}
+
+header .sub_nav {
+  background-color: #140101 !important;
+}
+header .sub_nav .navbar-brand .brand_logo {
+  height: 30px;
+}
+header .sub_nav .header_right a {
+  text-decoration: none;
+}
+header .sub_nav .header_right .subnav_nav {
+  padding-right: 25px;
+}
+header .sub_nav .header_right .subnav_direct {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+#carousel {
+  padding-top: 100px;
+}
+#carousel .carousel-item {
+  position: relative;
+}
+#carousel .carousel_product {
+  position: absolute;
+  z-index: 10;
+  top: -50px;
+  left: 150px;
+}
+#carousel .carousel_product_detail {
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 950px;
+}
+#carousel .carousel_product_detail h1 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #000;
+}
+#carousel .carousel_product_detail h3 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #000;
+}
+#carousel .carousel_product_detail button {
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f8b653;
+  border-radius: 0;
+  background-color: #f8b653;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

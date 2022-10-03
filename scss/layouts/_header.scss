@@ -1,0 +1,21 @@
+header{
+    .sub_nav{
+        background-color: $black-2 !important;
+        .navbar-brand{
+            .brand_logo{
+                height: 30px;
+            }
+        }
+        .header_right{
+            a{
+                text-decoration: none;
+            }
+            .subnav_nav{
+                padding-right: 25px;
+            }
+        .subnav_direct{
+            @include textStyle($fs-1, $fw-1, $white-1)
+        }
+        }
+    }
+}

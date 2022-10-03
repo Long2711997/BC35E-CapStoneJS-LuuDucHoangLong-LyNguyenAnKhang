@@ -1,0 +1,29 @@
+#carousel{
+    padding-top: 100px;
+    .carousel-item{
+        position: relative;
+    }
+    .carousel_product{
+        position: absolute;
+        z-index: 10;
+        top: -50px;
+        left: 150px;
+    }
+    .carousel_product_detail{
+        position: absolute;
+        z-index: 10;
+        top: 50px;
+        left: 950px;
+        h1{
+            @include textStyle($fs-5, $fw-1, $black-1);
+        }
+        h3{
+            @include textStyle($fs-4, $fw-1, $black-1);
+        }
+        button{
+            padding: 10px 30px;
+            margin-top: 30px;
+            @include borderStyle(1px, solid, $yellow-1, 0, $yellow-1, $fs-2, $fw-1, $white-1)
+        }
+    }
+}
