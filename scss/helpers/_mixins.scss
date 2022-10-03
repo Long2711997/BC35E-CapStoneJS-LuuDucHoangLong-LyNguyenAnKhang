@@ -5,3 +5,17 @@
   }
   color: $color;
 }
+
+@mixin borderStyle($bd, $bs, $bc, $br, $bg, $fs, $fw, $color) {
+  border-width: $bd;
+  border-style: $bs;
+  border-color: $bc;
+  border-radius: $br;
+  background-color: $bg;
+  font: {
+      size: $fs;
+      weight: $fw;
+    }
+  
+    color: $color;
+}
