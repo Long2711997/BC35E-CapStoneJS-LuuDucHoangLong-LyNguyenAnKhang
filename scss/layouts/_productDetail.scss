@@ -1,0 +1,87 @@
+.productDetail {
+  background-color: $white-1;
+
+  &__left {
+    padding: 60px 90px 80px 0;
+  }
+
+  &__background {
+    padding: 110px 55px 90px 55px;
+    background-color: $white-4;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .pInfo {
+    padding: 70px 250px 0px 20px;
+
+    &__about {
+      margin-bottom: 10px;
+    }
+
+    &__name {
+      @include textStyle($fs-4, $fw-1, $black-1);
+      margin-bottom: 9px;
+    }
+
+    &__desc {
+      @include textStyle($fs-1, $fw-2, $black-2);
+    }
+
+    &__avSize {
+      h4 {
+        @include textStyle($fs-3, $fw-3, $green-1);
+        margin-bottom: 30px;
+      }
+    }
+
+    .btn-size {
+      background-color: $gray-4;
+      height: 50px;
+      width: 50px;
+      margin-right: 20px;
+      border: none;
+      cursor: pointer;
+      @include textStyle($fs-3, $fw-4, $black-3);
+    }
+
+    &__buy {
+      margin-top: 18px;
+    }
+
+    &__price {
+      @include textStyle($fs-4, $fw-4, $red-2);
+      margin-bottom: 15px;
+    }
+
+    &__quantity {
+      .btn-increase,
+      .btn-decrease {
+        background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+        height: 50px;
+        width: 50px;
+        border: none;
+        cursor: pointer;
+        @include textStyle($fs-4, $fw-2, $white-5);
+      }
+
+      .number {
+        @include textStyle($fs-4, $fw-2, $black-1);
+        margin: 0 20px;
+      }
+    }
+
+    .btn-addCart {
+      margin-top: 10px;
+      padding: 18px 24px;
+      @include textStyle($fs-3, $fw-3, $white-6);
+      background: linear-gradient(
+        270deg,
+        rgba(62, 32, 248, 0.9) 5.14%,
+        #d017ee 89.71%
+      );
+    }
+  }
+}

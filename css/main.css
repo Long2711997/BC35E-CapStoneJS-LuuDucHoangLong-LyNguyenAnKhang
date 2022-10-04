@@ -104,6 +104,88 @@ header .sub_nav .header_right .subnav_direct {
   pointer-events: none;
 }
 
+.productDetail {
+  background-color: #fff;
+}
+.productDetail__left {
+  padding: 60px 90px 80px 0;
+}
+.productDetail__background {
+  padding: 110px 55px 90px 55px;
+  background-color: #f8f8f8;
+}
+.productDetail__background img {
+  width: 100%;
+}
+.productDetail .pInfo {
+  padding: 70px 250px 0px 20px;
+}
+.productDetail .pInfo__about {
+  margin-bottom: 10px;
+}
+.productDetail .pInfo__name {
+  font-size: 30px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 9px;
+}
+.productDetail .pInfo__desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #140101;
+}
+.productDetail .pInfo__avSize h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1ed90e;
+  margin-bottom: 30px;
+}
+.productDetail .pInfo .btn-size {
+  background-color: #ccc;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e1d1d;
+}
+.productDetail .pInfo__buy {
+  margin-top: 18px;
+}
+.productDetail .pInfo__price {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fc0303;
+  margin-bottom: 15px;
+}
+.productDetail .pInfo__quantity .btn-increase,
+.productDetail .pInfo__quantity .btn-decrease {
+  background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+  height: 50px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fffcfc;
+}
+.productDetail .pInfo__quantity .number {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 20px;
+}
+.productDetail .pInfo .btn-addCart {
+  margin-top: 10px;
+  padding: 18px 24px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff8f8;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #d017ee 89.71%);
+}
+
 .register {
   background-color: #fffcfc;
 }
