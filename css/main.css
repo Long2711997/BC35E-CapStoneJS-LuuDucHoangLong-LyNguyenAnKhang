@@ -43,7 +43,7 @@ header .sub_nav .header_right .subnav_direct {
   position: absolute;
   z-index: 10;
   top: 10%;
-  left: 50%;
+  left: 60%;
 }
 #carousel .carousel_product_detail h1 {
   font-size: 40px;
@@ -55,7 +55,7 @@ header .sub_nav .header_right .subnav_direct {
   font-weight: 300;
   color: #000;
 }
-#carousel .carousel_product_detail button {
+#carousel .carousel_product_detail button, #carousel .carousel_product_detail #product_feature .row .col-4 .card-body .product_price, #product_feature .row .col-4 .card-body #carousel .carousel_product_detail .product_price {
   padding: 10px 30px;
   margin-top: 30px;
   border-width: 1px;
@@ -66,6 +66,42 @@ header .sub_nav .header_right .subnav_direct {
   font-size: 20px;
   font-weight: 300;
   color: #fff;
+}
+
+#product_feature h1 {
+  margin: 50px auto;
+}
+#product_feature .row {
+  margin-top: 70px;
+}
+#product_feature .row:last-child {
+  margin-bottom: 100px;
+}
+#product_feature .row .col-4 .card-body {
+  position: relative;
+}
+#product_feature .row .col-4 .card-body img {
+  width: 70%;
+  margin: 10% auto;
+}
+#product_feature .row .col-4 .card-body .card-text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+#product_feature .row .col-4 .card-body button, #product_feature .row .col-4 .card-body .product_price {
+  width: 50%;
+  border-radius: 0%;
+  background-color: #f8b653;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#product_feature .row .col-4 .card-body .product_price {
+  background-color: #ccc;
+  left: 50%;
+  pointer-events: none;
 }
 
 footer {
