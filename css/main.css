@@ -68,6 +68,89 @@ header .sub_nav .header_right .subnav_direct {
   color: #fff;
 }
 
+.register {
+  background-color: #fffcfc;
+}
+.register__title {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+}
+.register__form {
+  padding-bottom: 40px;
+}
+.register .rForm__input {
+  padding: 25px 0 25px 0;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.register .rForm__input input {
+  width: 90%;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  border: none;
+  outline: none;
+  border-bottom: 5px solid #ae18e2;
+}
+.register .rForm__input::after {
+  content: "(*)";
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #f50e0e;
+}
+.register .rForm__radio {
+  padding-top: 30px;
+  display: flex;
+  justify-content: end;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+}
+.register .rForm__radio .content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.register .rForm__radio input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 65px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  transition: 0.2s all;
+}
+.register .rForm__radio input:checked {
+  background-color: #ae18e2;
+  border: 12px solid #d9d9d9;
+}
+.register .rForm__radio label:first-of-type {
+  margin-right: 20px;
+}
+.register .btn-submit {
+  padding-top: 85px;
+  padding-left: 60px;
+}
+.register .btn-submit button {
+  padding: 10px 90px;
+  background-color: #ae18e2;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fffcfc;
+  border: none;
+  cursor: pointer;
+}
+
 footer {
   font-family: "Montserrat", "Courier New", Courier, monospace;
 }

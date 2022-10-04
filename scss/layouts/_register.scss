@@ -1,0 +1,82 @@
+.register {
+  background-color: $white-5;
+
+  &__title {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    @include textStyle($fs-5, $fw-2, $black-1);
+  }
+
+  &__form {
+    padding-bottom: 40px;
+  }
+
+  .rForm__input {
+    padding: 25px 0 25px 0;
+    display: flex;
+    justify-content: end;
+    position: relative;
+
+    input {
+      width: 90%;
+      height: 50px;
+      @include textStyle($fs-4, $fw-2, $black-1);
+      border: none;
+      outline: none;
+      border-bottom: 5px solid $purple-1;
+    }
+
+    &::after {
+      content: '(*)';
+      position: absolute;
+      right: 10px;
+      top: 25px;
+      @include textStyle($fs-2, $fw-2, $red-1);
+    }
+  }
+
+  .rForm__radio {
+    padding-top: 30px;
+    display: flex;
+    justify-content: end;
+    @include textStyle($fs-4, $fw-2, $black-1);
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+    }
+
+    input {
+      appearance: none;
+      width: 65px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $gray-3;
+      transition: 0.2s all;
+
+      &:checked {
+        background-color: $purple-1;
+        border: 12px solid $gray-3;
+      }
+    }
+
+    label:first-of-type {
+      margin-right: 20px;
+    }
+  }
+
+  .btn-submit {
+    padding-top: 85px;
+    padding-left: 60px;
+
+    button {
+      padding: 10px 90px;
+      background-color: $purple-1;
+      @include textStyle($fs-4, $fw-2, $white-5);
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

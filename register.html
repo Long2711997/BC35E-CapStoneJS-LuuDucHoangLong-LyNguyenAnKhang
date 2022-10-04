@@ -38,19 +38,25 @@
     <!-- HEADER / NAVBAR -->
     <header>
       <nav class="navbar navbar-light bg-dark sub_nav">
-        <span class="navbar-brand mb-0 h1"><img class="brand_logo" src="./images/image3.png" alt=""></span>
+        <span class="navbar-brand mb-0 h1"
+          ><img class="brand_logo" src="./images/image3.png" alt=""
+        /></span>
         <div class="header_right">
-          <a href="#" class="subnav_nav"><img src="./images/image 8.png" alt=""></a>
+          <a href="#" class="subnav_nav"
+            ><img src="./images/image 8.png" alt=""
+          /></a>
           <a href="#" class="subnav_nav subnav_direct">Login</a>
           <a href="#" class="subnav_nav subnav_direct">Register</a>
         </div>
       </nav>
-    
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Man</a>
@@ -68,6 +74,67 @@
         </div>
       </nav>
     </header>
+
+    <!-- REGISTER -->
+    <section class="register">
+      <div class="container">
+        <h1 class="register__title">Register</h1>
+        <form class="register__form rForm">
+          <div class="row">
+            <div class="col-6">
+              <div class="rForm__left">
+                <div class="rForm__input">
+                  <input type="email" id="email" placeholder="email" />
+                </div>
+                <div class="rForm__input">
+                  <input type="password" id="password" placeholder="password" />
+                </div>
+                <div class="rForm__input">
+                  <input
+                    type="password"
+                    id="passwordConfirm"
+                    placeholder="password confirm"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="rForm__right">
+                <div class="rForm__input">
+                  <input type="text" id="name" placeholder="name" />
+                </div>
+                <div class="rForm__input">
+                  <input type="text" id="phone" placeholder="phone" />
+                </div>
+                <div class="rForm__radio">
+                  <div class="content">
+                    <span>Gender</span>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="male"
+                      value="true"
+                      checked
+                    />
+                    <label for="male">Male</label>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="false"
+                    />
+                    <label for="male">Female</label>
+                  </div>
+                </div>
+                <div class="btn-submit">
+                  <button type="button">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
@@ -94,13 +161,15 @@
         <div class="col-5 footer_right">
           <h5 class="foot_head">REGISTER</h5>
           <ul>
-            <li>Create one account to manage everything you do with Nike, from your shopping references to your Nike+
-              activity</li>
+            <li>
+              Create one account to manage everything you do with Nike, from
+              your shopping references to your Nike+ activity
+            </li>
             <li>Learn More</li>
           </ul>
         </div>
       </div>
-    
+
       <div class="row footer_bottom">
         <div class="col-5 foot_bottom_left">
           <h5 class="foot_head">EMAIL SIGN UP</h5>
@@ -121,8 +190,7 @@
         <div class="col-5 footer_bottom_right">
           <h5 class="foot_head">STORES NEAR YOU</h5>
           <ul>
-            <li>Locate a Nike retail store and authorized retailers
-            </li>
+            <li>Locate a Nike retail store and authorized retailers</li>
             <li>Search</li>
           </ul>
         </div>
