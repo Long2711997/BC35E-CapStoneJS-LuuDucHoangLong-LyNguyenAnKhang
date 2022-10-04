@@ -1,0 +1,97 @@
+footer{
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+    .footer_top{
+        position: relative;
+        background-color: rgb(250, 250, 250);
+        .foot_left{
+            padding-left: 10%;
+        }
+        .foot_head{
+            padding-top: 40px;
+            padding-bottom: 10px;
+        }
+        ul{
+            list-style-type: none;
+            @include textStyle($fs-1, $fw-1, $black-1);
+            li{
+                padding-bottom: 5px;
+                &:hover {
+                        cursor: pointer;
+                        @include textStyle($fs-1, $fw-2, $black-1);
+                    }
+            }
+        }
+        .line_left{
+            border-left: 2px solid rgb(226, 226, 226);
+            height: 150px;
+            position: absolute;
+            left: 40%;
+            top: 30px;
+        }
+        .line_right{
+            @extend .line_left;
+            left: 57%;
+        }
+        .footer_right{
+            li{
+                &:first-child {
+                    pointer-events: none;
+                    }
+                &:last-child{
+                    @include textStyle($fs-1, $fw-1, $yellow-1);
+                    &:hover{
+                        cursor: pointer;
+                        @include textStyle($fs-1, $fw-2, $yellow-1);
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .footer_bottom{
+        position: relative;
+        background-color: rgb(236, 236, 236);
+        
+            .foot_bottom_left {
+                padding-left: 10%;
+            }
+        
+            .foot_head {
+                padding-top: 40px;
+                padding-bottom: 10px;
+            }
+        
+            ul {
+                list-style-type: none;
+                @include textStyle($fs-1, $fw-1, $black-1);
+        
+                li {
+                    padding-bottom: 5px;
+                    &:first-child{
+                        @include textStyle($fs-1, $fw-1, $black-1);
+                    }
+                    &:last-child{
+                        @include textStyle($fs-1, $fw-1, $yellow-1);
+                        &:hover {
+                                cursor: pointer;
+                                @include textStyle($fs-1, $fw-2, $yellow-1);
+                            }
+                    }
+                }
+            }
+        
+            .line_left {
+                border-left: 2px solid rgb(226, 226, 226);
+                height: 100px;
+                position: absolute;
+                left: 40%;
+                top: 30px;
+            }
+        
+            .line_right {
+                @extend .line_left;
+                left: 57%;
+            }
+    }
+}
