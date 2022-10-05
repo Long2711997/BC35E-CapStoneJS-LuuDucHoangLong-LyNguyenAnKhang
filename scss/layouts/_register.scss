@@ -44,8 +44,14 @@
 
     .content {
       display: flex;
-      justify-content: space-between;
       width: 90%;
+    }
+
+    .gender {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding-left: 10px;
     }
 
     input {
@@ -60,10 +66,6 @@
         background-color: $purple-1;
         border: 12px solid $gray-3;
       }
-    }
-
-    label:first-of-type {
-      margin-right: 20px;
     }
   }
 

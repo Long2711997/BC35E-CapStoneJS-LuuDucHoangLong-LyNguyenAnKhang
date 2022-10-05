@@ -239,11 +239,18 @@ header .sub_nav .header_right .subnav_direct {
 }
 .register .rForm__radio .content {
   display: flex;
-  justify-content: space-between;
   width: 90%;
 }
+.register .rForm__radio .gender {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+}
 .register .rForm__radio input {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 65px;
   height: 50px;
   border-radius: 50%;
@@ -253,9 +260,6 @@ header .sub_nav .header_right .subnav_direct {
 .register .rForm__radio input:checked {
   background-color: #ae18e2;
   border: 12px solid #d9d9d9;
-}
-.register .rForm__radio label:first-of-type {
-  margin-right: 20px;
 }
 .register .btn-submit {
   padding-top: 85px;
