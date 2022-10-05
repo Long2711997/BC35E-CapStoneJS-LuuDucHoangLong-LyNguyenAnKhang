@@ -8,34 +8,40 @@
             margin-bottom: 100px;
         }
         .col-4{
-            .card-body{
-                position: relative;
-                img {
-                        width: 70%;
-                        margin: 10% auto;
-                    }
+            .card{
+                height: 500px;
+                margin-bottom: 30px;
+                .card-body {
+                        position: relative;
                 
-                    .card-text {
-                        @include textStyle($fs-1, $fw-1, $gray-4);
-                        margin-bottom: 30px;
-                    }
+                        img {
+                            width: 70%;
+                            margin: 10% auto;
+                        }
                 
-                    button {
-                        width: 50%;
-                        border-radius: 0%;
-                        background-color: $yellow-1;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                    }
-
-                    .product_price{
-                        @extend button;
-                        background-color: $gray-4;
-                        left: 50%;
-                        pointer-events: none;
+                        .card-text {
+                            @include textStyle($fs-1, $fw-1, $gray-4);
+                            margin-bottom: 30px;
+                        }
+                
+                        button {
+                            width: 50%;
+                            border-radius: 0%;
+                            background-color: $yellow-1;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                        }
+                
+                        .product_price {
+                            @extend button;
+                            background-color: $gray-4;
+                            left: 50%;
+                            pointer-events: none;
+                        }
                     }
             }
+            
         }
     }
 }

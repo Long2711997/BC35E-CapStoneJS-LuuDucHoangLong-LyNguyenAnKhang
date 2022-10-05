@@ -49,7 +49,7 @@
         <div class="header_right">
           <a href="#" class="subnav_nav"><img src="./images/image 8.png" alt=""></a>
           <a href="#" class="subnav_nav subnav_direct">Login</a>
-          <a href="#" class="subnav_nav subnav_direct">Register</a>
+          <a href="./register.html" class="subnav_nav subnav_direct">Register</a>
         </div>
       </nav>
 
@@ -57,7 +57,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Man</a>
@@ -84,7 +84,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
+        <div id="carousel_product_render" class="carousel-inner">
           <div class="carousel-item active">
             <img src="./images/image6.png" class="d-block w-100" alt="...">
             <img class="carousel_product" src="./images/image4.png" alt="">
@@ -128,7 +128,7 @@
     <section id="product_feature">
       <div class="container">
       <h1 class="text-center">- Product Feature -</h1>
-      <div class="row">
+      <div id="data-product" class="row">
         <div class="col-4">
           <div class="card bg-light" style="width: 18rem;">
             <img src="./images/image5.png" class="card-img-top" alt="...">
@@ -168,46 +168,6 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-4">
-          <div class="card bg-light" style="width: 18rem;">
-            <img src="./images/image5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Adidas Prophere</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-              <button href="#" class="btn">Buy Now</button>
-              <a href="#" class="btn product_price">85$</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card bg-light" style="width: 18rem;">
-            <img src="./images/image5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Adidas Prophere</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-              <button href="#" class="btn">Buy Now</button>
-              <a href="#" class="btn product_price">85$</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card bg-light" style="width: 18rem;">
-            <img src="./images/image5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Adidas Prophere</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-              <button href="#" class="btn">Buy Now</button>
-              <a href="#" class="btn product_price">85$</a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -223,21 +183,21 @@
             <li>Nike +</li>
           </ul>
         </div>
-        <div class="line_left"></div>
         <div class="col-2 foot_center">
+          <div class="line_left"></div>
           <h5 class="foot_head">ORDERS</h5>
           <ul>
             <li>Payment Options</li>
             <li>Shipping and Delivery</li>
             <li>Returns</li>
           </ul>
+          <div class="line_right"></div>
         </div>
-        <div class="line_right"></div>
         <div class="col-5 footer_right">
           <h5 class="foot_head">REGISTER</h5>
           <ul>
             <li>Create one account to manage everything you do with Nike, from your shopping references to your Nike+ activity</li>
-            <li>Learn More</li>
+            <li><a href="./register.html">Learn More</a></li>
           </ul>
         </div>
       </div>
@@ -250,15 +210,15 @@
             <li>Sign up now</li>
           </ul>
         </div>
-        <div class="line_left"></div>
         <div class="col-2 foot_bottom_center">
+          <div class="line_left"></div>
           <h5 class="foot_head">GIFT CARDS</h5>
           <ul>
             <li>Give the gift that always fits</li>
             <li>View cards</li>
           </ul>
+          <div class="line_right"></div>
         </div>
-        <div class="line_right"></div>
         <div class="col-5 footer_bottom_right">
           <h5 class="foot_head">STORES NEAR YOU</h5>
           <ul>
@@ -282,5 +242,12 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+
+    <!-- AXIOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./controllers/index.js"></script>
   </body>
 </html>
