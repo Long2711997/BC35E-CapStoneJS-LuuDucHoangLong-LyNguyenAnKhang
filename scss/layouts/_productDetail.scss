@@ -37,6 +37,10 @@
       }
     }
 
+    &__sizes {
+      display: flex;
+    }
+
     .btn-size {
       background-color: $gray-4;
       height: 50px;
