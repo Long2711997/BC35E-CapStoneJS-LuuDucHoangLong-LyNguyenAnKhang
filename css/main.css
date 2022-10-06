@@ -94,13 +94,16 @@ header .sub_nav .header_right .subnav_direct {
   color: #ccc;
   margin-bottom: 30px;
 }
-#product_feature .row .col-4 .card .card-body button, #product_feature .row .col-4 .card .card-body .product_price {
+#product_feature .row .col-4 .card .card-body a {
   width: 50%;
   border-radius: 0%;
   background-color: #f8b653;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+#product_feature .row .col-4 .card .card-body a:focus {
+  box-shadow: none;
 }
 #product_feature .row .col-4 .card .card-body .product_price {
   background-color: #ccc;
@@ -143,6 +146,9 @@ header .sub_nav .header_right .subnav_direct {
   font-weight: 500;
   color: #1ed90e;
   margin-bottom: 30px;
+}
+.productDetail .pInfo__sizes {
+  display: flex;
 }
 .productDetail .pInfo .btn-size {
   background-color: #ccc;
