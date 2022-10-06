@@ -55,7 +55,7 @@ header .sub_nav .header_right .subnav_direct {
   font-weight: 300;
   color: #000;
 }
-#carousel .carousel_product_detail button, #carousel .carousel_product_detail #product_feature .row .col-4 .card .card-body .product_price, #product_feature .row .col-4 .card .card-body #carousel .carousel_product_detail .product_price {
+#carousel .carousel_product_detail button, #carousel .carousel_product_detail #product_feature .row .col-md-4 .card .card-body .product_price, #product_feature .row .col-md-4 .card .card-body #carousel .carousel_product_detail .product_price {
   padding: 10px 30px;
   margin-top: 30px;
   border-width: 1px;
@@ -77,24 +77,24 @@ header .sub_nav .header_right .subnav_direct {
 #product_feature .row:last-child {
   margin-bottom: 100px;
 }
-#product_feature .row .col-4 .card {
+#product_feature .row .col-md-4 .card {
   height: 500px;
   margin-bottom: 30px;
 }
-#product_feature .row .col-4 .card .card-body {
+#product_feature .row .col-md-4 .card .card-body {
   position: relative;
 }
-#product_feature .row .col-4 .card .card-body img {
+#product_feature .row .col-md-4 .card .card-body img {
   width: 70%;
   margin: 10% auto;
 }
-#product_feature .row .col-4 .card .card-body .card-text {
+#product_feature .row .col-md-4 .card .card-body .card-text {
   font-size: 16px;
   font-weight: 300;
   color: #ccc;
   margin-bottom: 30px;
 }
-#product_feature .row .col-4 .card .card-body a {
+#product_feature .row .col-md-4 .card .card-body a {
   width: 50%;
   border-radius: 0%;
   background-color: #f8b653;
@@ -102,10 +102,10 @@ header .sub_nav .header_right .subnav_direct {
   bottom: 0;
   left: 0;
 }
-#product_feature .row .col-4 .card .card-body a:focus {
+#product_feature .row .col-md-4 .card .card-body a:focus {
   box-shadow: none;
 }
-#product_feature .row .col-4 .card .card-body .product_price {
+#product_feature .row .col-md-4 .card .card-body .product_price {
   background-color: #ccc;
   left: 50%;
   pointer-events: none;
@@ -255,9 +255,7 @@ header .sub_nav .header_right .subnav_direct {
   padding-left: 10px;
 }
 .register .rForm__radio input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 65px;
   height: 50px;
   border-radius: 50%;
@@ -278,7 +276,7 @@ header .sub_nav .header_right .subnav_direct {
   padding-top: 85px;
   padding-left: 60px;
 }
-.register .btn-submit button, .register .btn-submit #product_feature .row .col-4 .card .card-body .product_price, #product_feature .row .col-4 .card .card-body .register .btn-submit .product_price {
+.register .btn-submit button, .register .btn-submit #product_feature .row .col-md-4 .card .card-body .product_price, #product_feature .row .col-md-4 .card .card-body .register .btn-submit .product_price {
   padding: 10px 90px;
   background-color: #ae18e2;
   font-size: 30px;
@@ -327,11 +325,7 @@ footer .footer_top .line_left, footer .footer_top .footer_bottom .foot_bottom_ce
   z-index: 2;
 }
 footer .footer_top .line_right {
-  left: 80%;
-}
-footer .footer_top .foot_center, footer .footer_top .footer_right {
-  padding-left: 0px;
-  padding-right: 0px;
+  left: 100%;
 }
 footer .footer_top .footer_right li:first-child {
   pointer-events: none;
@@ -358,7 +352,6 @@ footer .footer_bottom {
   background-color: rgb(236, 236, 236);
 }
 footer .footer_bottom .foot_bottom_left {
-  padding-right: 0px;
   padding-left: 10%;
 }
 footer .footer_bottom .foot_head {
@@ -390,10 +383,6 @@ footer .footer_bottom ul li:last-child:hover {
   font-weight: 400;
   color: #f8b653;
 }
-footer .footer_bottom .foot_bottom_center, footer .footer_bottom .footer_bottom_right {
-  padding-left: 0px;
-  padding-right: 0px;
-}
 footer .footer_bottom .foot_bottom_center .line_left, footer .footer_bottom .footer_bottom_right .line_left, footer .footer_bottom .foot_bottom_center .line_right, footer .footer_bottom .footer_bottom_right .line_right {
   border-left: 2px solid rgb(226, 226, 226);
   height: 100px;
@@ -402,5 +391,5 @@ footer .footer_bottom .foot_bottom_center .line_left, footer .footer_bottom .foo
   top: 30px;
 }
 footer .footer_bottom .foot_bottom_center .line_right, footer .footer_bottom .footer_bottom_right .line_right {
-  left: 80%;
+  left: 100%;
 }/*# sourceMappingURL=main.css.map */
