@@ -33,14 +33,10 @@ footer{
         }
         .line_right{
             @extend .line_left;
-            left: 80%;
+            left: 100%;
         }
-        .foot_center{
-            padding-left: 0px;
-            padding-right: 0px;
-        }
+        
         .footer_right{
-            @extend .foot_center;
             li{
                 &:first-child {
                     pointer-events: none;
@@ -65,7 +61,6 @@ footer{
         background-color: rgb(236, 236, 236);
         
             .foot_bottom_left {
-                padding-right: 0px;
                 padding-left: 10%;
             }
         
@@ -94,8 +89,6 @@ footer{
             }
 
             .foot_bottom_center{
-                padding-left: 0px;
-                padding-right: 0px;
                     .line_left {
                             border-left: 2px solid rgb(226, 226, 226);
                             height: 100px;
@@ -106,7 +99,7 @@ footer{
                     
                         .line_right {
                             @extend .line_left;
-                            left: 80%;
+                            left: 100%;
                         }
             }
 
