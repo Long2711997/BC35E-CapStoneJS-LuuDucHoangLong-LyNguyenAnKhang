@@ -15,7 +15,8 @@
   .rForm__input {
     padding: 25px 0 25px 0;
     display: flex;
-    justify-content: end;
+    align-items: end;
+    flex-direction: column;
     position: relative;
 
     input {
@@ -67,6 +68,11 @@
         border: 12px solid $gray-3;
       }
     }
+  }
+
+  .rForm__error {
+    @include textStyle($fs-4, $fw-2, $red-1);
+    width: 90%;
   }
 
   .btn-submit {

@@ -207,7 +207,8 @@ header .sub_nav .header_right .subnav_direct {
 .register .rForm__input {
   padding: 25px 0 25px 0;
   display: flex;
-  justify-content: end;
+  align-items: end;
+  flex-direction: column;
   position: relative;
 }
 .register .rForm__input input {
@@ -260,6 +261,12 @@ header .sub_nav .header_right .subnav_direct {
 .register .rForm__radio input:checked {
   background-color: #ae18e2;
   border: 12px solid #d9d9d9;
+}
+.register .rForm__error {
+  font-size: 30px;
+  font-weight: 400;
+  color: #f50e0e;
+  width: 90%;
 }
 .register .btn-submit {
   padding-top: 85px;
