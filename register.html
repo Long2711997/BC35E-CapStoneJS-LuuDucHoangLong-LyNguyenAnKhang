@@ -87,9 +87,11 @@
               <div class="rForm__left">
                 <div class="rForm__input">
                   <input type="email" id="email" placeholder="email" />
+                  <p class="rForm__error" id="emailError"></p>
                 </div>
                 <div class="rForm__input">
                   <input type="password" id="password" placeholder="password" />
+                  <p class="rForm__error" id="passwordError"></p>
                 </div>
                 <div class="rForm__input">
                   <input
@@ -97,6 +99,7 @@
                     id="passwordConfirm"
                     placeholder="password confirm"
                   />
+                  <p class="rForm__error" id="passwordConfirmError"></p>
                 </div>
               </div>
             </div>
@@ -104,9 +107,11 @@
               <div class="rForm__right">
                 <div class="rForm__input">
                   <input type="text" id="name" placeholder="name" />
+                  <p class="rForm__error" id="nameError"></p>
                 </div>
                 <div class="rForm__input">
                   <input type="text" id="phone" placeholder="phone" />
+                  <p class="rForm__error" id="phoneError"></p>
                 </div>
                 <div class="rForm__radio">
                   <div class="content">
@@ -135,7 +140,7 @@
                   </div>
                 </div>
                 <div class="btn-submit">
-                  <button class="submitRegister" type="button">Submit</button>
+                  <button id="submitRegister" type="button">Submit</button>
                 </div>
               </div>
             </div>
@@ -225,6 +230,8 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <script src="./js/models/validation.js"></script>
+    <script src="./js/models/user.js"></script>
     <script src="./js/controllers/register.js"></script>
   </body>
 </html>
