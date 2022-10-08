@@ -30,7 +30,7 @@ function renderProduct(arrProduct) {
                   : product.description
               }
               </p>
-              <a href="./detail.html?id=${product.id}" class="btn">Buy Now</a>
+              <a href="/detail.html?id=${product.id}" class="btn">Buy Now</a>
               <a href="#" class="btn product_price">${product.price} $</a>
             </div>
           </div>
