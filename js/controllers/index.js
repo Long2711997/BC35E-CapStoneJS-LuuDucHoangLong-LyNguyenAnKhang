@@ -16,15 +16,17 @@ function getDataProduct() {
 }
 
 // RENDER CAROUSEL
-function renderCarousel(arrCarousel){
+function renderCarousel(arrCarousel) {
   var contentHTML = ``;
   for (var index = 0; index < 3; index++) {
     var carouselProduct = arrCarousel[index];
-    if (index == 0){
+    if (index == 0) {
       contentHTML += `
         <div class="carousel-item active">
             <img src="./images/image6.png" class="d-block w-100" alt="..." />
-            <img class="carousel_product" src="${carouselProduct.image}" alt="" />
+            <img class="carousel_product" src="${
+              carouselProduct.image
+            }" alt="" />
             <div class="carousel_product_detail">
               <h1>${carouselProduct.name}</h1>
               <h3>${
@@ -32,14 +34,16 @@ function renderCarousel(arrCarousel){
                   ? carouselProduct.description.substr(0, 30) + '...'
                   : carouselProduct.description
               }</h3>
-              <button>Buy Now</button>
+              <a href="/detail.html?id=${carouselProduct.id}">Buy Now</a>
             </div>
           </div>`;
     } else {
       contentHTML += `
         <div class="carousel-item">
             <img src="./images/image6.png" class="d-block w-100" alt="..." />
-            <img class="carousel_product" src="${carouselProduct.image}" alt="" />
+            <img class="carousel_product" src="${
+              carouselProduct.image
+            }" alt="" />
             <div class="carousel_product_detail">
               <h1>${carouselProduct.name}</h1>
               <h3>${
@@ -47,11 +51,10 @@ function renderCarousel(arrCarousel){
                   ? carouselProduct.description.substr(0, 30) + '...'
                   : carouselProduct.description
               }</h3>
-              <button>Buy Now</button>
+              <a href="/detail.html?id=${carouselProduct.id}">Buy Now</a>
             </div>
           </div>`;
     }
-    
   }
 
   document.querySelector('#carousel_product_render').innerHTML = contentHTML;
@@ -73,7 +76,7 @@ function renderProduct(arrProduct) {
                   : product.description
               }
               </p>
-              <a href="./detail.html?id=${product.id}" class="btn">Buy Now</a>
+              <a href="/detail.html?id=${product.id}" class="btn">Buy Now</a>
               <a href="#" class="btn product_price">${product.price} $</a>
             </div>
           </div>

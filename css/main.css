@@ -55,9 +55,11 @@ header .sub_nav .header_right .subnav_direct {
   font-weight: 300;
   color: #000;
 }
-#carousel .carousel_product_detail button, #carousel .carousel_product_detail #product_feature .row .col-md-4 .card .card-body .product_price, #product_feature .row .col-md-4 .card .card-body #carousel .carousel_product_detail .product_price {
+#carousel .carousel_product_detail a {
   padding: 10px 30px;
   margin-top: 30px;
+  display: inline-block;
+  text-decoration: none;
   border-width: 1px;
   border-style: solid;
   border-color: #f8b653;
@@ -255,7 +257,9 @@ header .sub_nav .header_right .subnav_direct {
   padding-left: 10px;
 }
 .register .rForm__radio input {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 65px;
   height: 50px;
   border-radius: 50%;
