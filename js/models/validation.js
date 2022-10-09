@@ -30,4 +30,34 @@ function Validation() {
     document.querySelector('#passwordConfirmError').style.display = 'none';
     return true;
   };
+
+  this.checkEmailFormat = function (value) {
+    var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (value.match(emailFormat)) {
+      document.querySelector('#emailError').innerHTML = '';
+      document.querySelector('#emailError').style.display = 'none';
+      return true;
+    }
+
+    document.querySelector('#emailError').innerHTML =
+      'Vui lòng nhập đúng định dạng email';
+    document.querySelector('#emailError').style.display = 'block';
+    return false;
+  };
+
+  this.checkPhoneFormat = function (value) {
+    var phoneFormat = /^[0-9]+$/;
+
+    if (value.match(phoneFormat)) {
+      document.querySelector('#phoneError').innerHTML = '';
+      document.querySelector('#phoneError').style.display = 'none';
+      return true;
+    }
+
+    document.querySelector('#phoneError').innerHTML =
+      'Vui lòng nhập đúng định dạng số điện thoại';
+    document.querySelector('#phoneError').style.display = 'block';
+    return false;
+  };
 }
