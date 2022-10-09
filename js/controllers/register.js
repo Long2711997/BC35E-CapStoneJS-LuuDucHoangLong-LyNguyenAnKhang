@@ -12,7 +12,9 @@ function getUserInput() {
   var isValid = true;
   var validation = new Validation();
 
-  isValid &= validation.checkEmpty(email, '#emailError', 'email');
+  isValid &=
+    validation.checkEmpty(email, '#emailError', 'email') &&
+    validation.checkEmailFormat(email);
 
   isValid &= validation.checkEmpty(password, '#passwordError', 'mật khẩu');
 
@@ -25,7 +27,9 @@ function getUserInput() {
 
   isValid &= validation.checkEmpty(name, '#nameError', 'tên');
 
-  isValid &= validation.checkEmpty(phone, '#phoneError', 'số điện thoại');
+  isValid &=
+    validation.checkEmpty(phone, '#phoneError', 'số điện thoại') &&
+    validation.checkPhoneFormat(phone);
 
   if (isValid) {
     var user = new User(email, password, name, phone, gender);
