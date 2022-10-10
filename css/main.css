@@ -220,6 +220,7 @@ header .sub_nav .header_right .subnav_direct {
   position: relative;
 }
 .register .rForm__input input {
+  padding-right: 40px;
   width: 90%;
   height: 50px;
   font-size: 30px;
