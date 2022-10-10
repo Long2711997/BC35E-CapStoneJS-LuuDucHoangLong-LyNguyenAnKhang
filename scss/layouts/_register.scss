@@ -20,6 +20,7 @@
     position: relative;
 
     input {
+      padding-right: 40px;
       width: 90%;
       height: 50px;
       @include textStyle($fs-4, $fw-2, $black-1);
