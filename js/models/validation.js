@@ -1,16 +1,16 @@
 function Validation() {
   // Check empty
-  this.checkEmpty = function (value, inputSelector, info) {
+  this.checkEmpty = function (value, errorSelector, info) {
     if (value === null || value.trim() === '') {
       document.querySelector(
-        inputSelector
+        errorSelector
       ).innerHTML = `<p class="errorMessage">Vui lòng nhập ${info}</p>`;
-      document.querySelector(inputSelector).style.display = 'block';
+      document.querySelector(errorSelector).style.display = 'block';
       return false;
     }
 
-    document.querySelector(inputSelector).innerHTML = '';
-    document.querySelector(inputSelector).style.display = 'none';
+    document.querySelector(errorSelector).innerHTML = '';
+    document.querySelector(errorSelector).style.display = 'none';
     return true;
   };
 
@@ -31,6 +31,7 @@ function Validation() {
     return true;
   };
 
+  // Check email format
   this.checkEmailFormat = function (value) {
     var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -46,6 +47,7 @@ function Validation() {
     return false;
   };
 
+  // Check phone format
   this.checkPhoneFormat = function (value) {
     var phoneFormat = /^[0-9]+$/;
 
@@ -55,9 +57,38 @@ function Validation() {
       return true;
     }
 
-    document.querySelector('#phoneError').innerHTML =
-      'Vui lòng nhập đúng định dạng số điện thoại';
+    document.querySelector('#phoneError').innerHTML = 'Vui lòng nhập số';
     document.querySelector('#phoneError').style.display = 'block';
+    return false;
+  };
+
+  // Check password format
+  this.checkPasswordFormat = function (value) {
+    var passwordFormat =
+      /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{0,}$/;
+
+    if (value.match(passwordFormat)) {
+      document.querySelector('#passwordError').innerHTML = '';
+      document.querySelector('#passwordError').style.display = 'none';
+      return true;
+    }
+
+    document.querySelector('#passwordError').innerHTML =
+      'Mật khẩu cần chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt';
+    document.querySelector('#passwordError').style.display = 'block';
+    return false;
+  };
+
+  // Check length
+  this.checkLength = function (value, errorSelector, message, min, max) {
+    if (value.length >= min && value.length <= max) {
+      document.querySelector(errorSelector).innerHTML = '';
+      document.querySelector(errorSelector).style.display = 'none';
+      return true;
+    }
+
+    document.querySelector(errorSelector).innerHTML = message;
+    document.querySelector(errorSelector).style.display = 'block';
     return false;
   };
 }

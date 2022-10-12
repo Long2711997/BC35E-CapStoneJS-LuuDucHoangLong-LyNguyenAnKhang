@@ -16,7 +16,16 @@ function getUserInput() {
     validation.checkEmpty(email, '#emailError', 'email') &&
     validation.checkEmailFormat(email);
 
-  isValid &= validation.checkEmpty(password, '#passwordError', 'mật khẩu');
+  isValid &=
+    validation.checkEmpty(password, '#passwordError', 'mật khẩu') &&
+    validation.checkLength(
+      password,
+      '#passwordError',
+      'Độ dài mật khẩu phải từ 6 - 10 ký tự',
+      6,
+      10
+    ) &&
+    validation.checkPasswordFormat(password);
 
   isValid &=
     validation.checkEmpty(
@@ -29,7 +38,14 @@ function getUserInput() {
 
   isValid &=
     validation.checkEmpty(phone, '#phoneError', 'số điện thoại') &&
-    validation.checkPhoneFormat(phone);
+    validation.checkPhoneFormat(phone) &&
+    validation.checkLength(
+      phone,
+      '#phoneError',
+      'Độ dài số điện thoại phải là 10 số',
+      10,
+      10
+    );
 
   if (isValid) {
     var user = new User(email, password, name, phone, gender);
